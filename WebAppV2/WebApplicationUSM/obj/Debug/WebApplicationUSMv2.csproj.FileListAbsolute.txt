@@ -1,0 +1,6 @@
+C:\Users\Nivek\Dropbox\Trabajo de titulo\Desarrollo\Visual\Pc\WebAppV2\WebApplicationUSM\obj\Debug\WebApplicationUSMv2.csprojResolveAssemblyReference.cache
+C:\Users\Nivek\Dropbox\Trabajo de titulo\Desarrollo\Visual\Pc\WebAppV2\WebApplicationUSM\obj\Debug\WebApplicationUSM.dll
+C:\Users\Nivek\Dropbox\Trabajo de titulo\Desarrollo\Visual\Pc\WebAppV2\WebApplicationUSM\obj\Debug\WebApplicationUSM.pdb
+C:\Users\Nivek\Dropbox\Trabajo de titulo\Desarrollo\Visual\Pc\WebAppV2\WebApplicationUSM\bin\WebApplicationUSM.dll.config
+C:\Users\Nivek\Dropbox\Trabajo de titulo\Desarrollo\Visual\Pc\WebAppV2\WebApplicationUSM\bin\WebApplicationUSM.dll
+C:\Users\Nivek\Dropbox\Trabajo de titulo\Desarrollo\Visual\Pc\WebAppV2\WebApplicationUSM\bin\WebApplicationUSM.pdb

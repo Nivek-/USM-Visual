@@ -1,0 +1,6 @@
+c:\users\nivek\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\bin\ServicioWebSoap.dll.config
+c:\users\nivek\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\bin\ServicioWebSoap.dll
+c:\users\nivek\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\bin\ServicioWebSoap.pdb
+c:\users\nivek\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\obj\Release\ServicioWebSoap.csprojResolveAssemblyReference.cache
+c:\users\nivek\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\obj\Release\ServicioWebSoap.dll
+c:\users\nivek\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\obj\Release\ServicioWebSoap.pdb
