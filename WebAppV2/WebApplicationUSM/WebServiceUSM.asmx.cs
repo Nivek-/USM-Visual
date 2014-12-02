@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services;
 using System.Data.SqlClient;
 using ServiceWebAplicacion;
+using WebApplicationUSM;
 
 namespace WebApplicationUSM
 {
@@ -65,7 +66,7 @@ namespace WebApplicationUSM
             return lista.ToArray();
 
         }
-        
+
         [WebMethod]
         public curso[] ObtenerCurso_Profesor(string cod_profesor)
         {
@@ -356,18 +357,19 @@ namespace WebApplicationUSM
 
         //Casino--------------------------------------------------------------------------------------------------
         [WebMethod]
-        public int InsertarMenu(string Cod_tipo, string Cod_dia, string fondo, string entrada,string postre)
+        public int InsertarMenu(string Cod_tipo, string Cod_dia, int dia, string fondo, string entrada, string postre)
         {
             SqlConnection con =
                 new SqlConnection(
                    @"Data Source=EQUIPO-KEVIN\SQLSERVER;Initial Catalog=BDUSM;User Id=adm;password=usm");
             con.Open();
 
-            string sql = "INSERT INTO MenuCasino (Cod_tipo,Cod_dia,fondo,entrada,postre) VALUES (@cod_tipo,@cod_dia,@fondo, @entrada, @postre)";
+            string sql = "INSERT INTO MenuCasino (Cod_tipo,Cod_dia,dia,fondo,entrada,postre) VALUES (@cod_tipo,@cod_dia,@dia,@fondo, @entrada, @postre)";
 
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.Add("@cod_tipo", System.Data.SqlDbType.NVarChar).Value = Cod_tipo;
             cmd.Parameters.Add("@cod_dia", System.Data.SqlDbType.Date).Value = Cod_dia;
+            cmd.Parameters.Add("@dia", System.Data.SqlDbType.Int).Value = dia;
             cmd.Parameters.Add("@fondo", System.Data.SqlDbType.NVarChar).Value = fondo;
             cmd.Parameters.Add("@entrada", System.Data.SqlDbType.NVarChar).Value = entrada;
             cmd.Parameters.Add("@postre", System.Data.SqlDbType.NVarChar).Value = postre;
@@ -377,7 +379,7 @@ namespace WebApplicationUSM
 
             return res;
         }
-        
+
         [WebMethod]
         public Menu[] ObtenerMenu(char cod_tipo, string cod_dia)
         {
@@ -390,7 +392,7 @@ namespace WebApplicationUSM
             string sql = "SELECT entrada,fondo,postre FROM MenuCasino WHERE cod_tipo = @cod_tipo  and cod_dia = @cod_dia";
 
             SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.Add("@cod_tipo", System.Data.SqlDbType.Char).Value = cod_tipo;      
+            cmd.Parameters.Add("@cod_tipo", System.Data.SqlDbType.Char).Value = cod_tipo;
             cmd.Parameters.Add("@cod_dia", System.Data.SqlDbType.Date).Value = cod_dia;
 
             SqlDataReader reader = cmd.ExecuteReader();
